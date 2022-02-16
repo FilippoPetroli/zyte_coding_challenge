@@ -11,9 +11,6 @@ class BooksSpider(scrapy.Spider):
 		for category in response.css('ul.nav li ul li a'):
 			yield response.follow(category, callback = self.parse_book)
 
-		
-
-		
 	
 	def parse_book(self, response):
 		for book in response.css('.product_pod'):

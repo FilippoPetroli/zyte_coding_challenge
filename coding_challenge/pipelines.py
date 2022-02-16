@@ -6,8 +6,6 @@
 
 # useful for handling different item types with a single interface
 from itemadapter import ItemAdapter
-import json
-
 
 class CodingChallengePipeline:
     def process_item(self, item, spider):
